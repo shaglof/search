@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #eee;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .header {
+    margin-top: 20px;
+    color: #911;
+    width: 95%;
+    position: absolute;
+}
+
+.container .header::after {
+    width: 100%;
+    height: 1px;
+    background-color: #999;
+    position: relative;
+    content: '';
+    display: block;
+}
+
+.container .header h2 {
+    text-align: left;
+}
+
+.nav {
+    color: white;
+    padding: 10px 20px;
+    align-self: end;
+}
+
+.nav .page-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.search {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    outline: 1px solid #0056b3;
+}
+
+.search-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.search-form input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.search-form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+
+/* advanced search form */
+
+.search form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.search form .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search form .form-group label {
+    width: 300px;
+    font-size: 14px;
+}
+
+.search form .form-group input[type='text'] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 5px;
+    width: 60%;
+}
+
+.search form input[type='submit'] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -ms-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+
+.search form input[type='submit']:hover {
+    background-color: #0056b3;
+}
